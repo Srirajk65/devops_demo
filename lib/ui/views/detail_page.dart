@@ -8,6 +8,43 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(141, 241, 106, 1.0),
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text(
+          'Flutter Tutorial',
+        ),
+      ),
+      body: Container (
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 30,
+              ),
+              const TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.teal)),
+                  labelText: 'Enter Email',
+                ),
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.black,
+
+                ),
+                onPressed: () {},
+                child: const Text('Submit',
+                  style: TextStyle(fontSize: 24),
+                ),
+              ),
+            ],
+          )
+        ),
+      );
   }
 }

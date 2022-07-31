@@ -11,6 +11,11 @@ import 'package:devops_demo/ui/views/knowledge.dart';
 import 'package:devops_demo/ui/views/work.dart';
 import 'package:devops_demo/ui/widgets/showalertdialog.dart';
 
+import '../college.dart';
+import '../iced.dart';
+import '../student.dart';
+import '../subject.dart';
+
 class MainMenuTabUser extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => MainMenuTabUserState();
@@ -41,11 +46,11 @@ class MainMenuTabUserState extends State<MainMenuTabUser>
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 9,
+      length: 13,
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
-            indicatorWeight: 5,
+            indicatorWeight: 6,
             isScrollable: true,
             tabs: [
               Tab(icon: Icon(Icons.family_restroom), child: Text(Strings.TITLE_MM_TB_MM)),
@@ -63,13 +68,17 @@ class MainMenuTabUserState extends State<MainMenuTabUser>
               Tab(
                   icon: Icon(Icons.contact_support),
                   child: Text(Strings.TITLE_MM_TB_DPSR)),
+              Tab(icon: Icon(Icons.ac_unit_outlined), child: Text(Strings.TITLE_MM_TB_iced)),
+              Tab(icon: Icon(Icons.account_circle), child: Text(Strings.TITLE_MM_TB_student)),
+              Tab(icon: Icon(Icons.school_outlined), child: Text(Strings.TITLE_MM_TB_college)),
+              Tab(icon: Icon(Icons.book), child: Text(Strings.TITLE_MM_TB_subject)),
             ],
           ),
           title: Center(
             child: Column(
               children: [
                 Text(
-                  Strings.DET_MM_TB_WEL + "BITS User",
+                  Strings.DET_MM_TB_WEL + "BOSS",
                 ),
                 Text(
                     greeting()
@@ -96,6 +105,10 @@ class MainMenuTabUserState extends State<MainMenuTabUser>
             Knowledge(),
             Charity(),
             AboutUs(),
+            iced(),
+            student(),
+            college(),
+            subject(),
           ],
         ),
       ),

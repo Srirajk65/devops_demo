@@ -66,6 +66,7 @@ class Strings {
   static const String DB_PROFILE = 'Profile';
   static const String DB_OPERATION = 'Operation';
   static const String DB_STATUS = 'Status';
+  static const String TITLE_MM_TB_student = 'Student';
 
 // Hint Text
   static const String HINT_USER_NAME = 'User Name';
@@ -94,6 +95,15 @@ class Strings {
   static const String TITLE_VAT_VIEW_EDIT_DELETE_PROFILE = 'View/Edit/Delete your created Profile';
   static const String TITLE_DPSR_ABOUT_US = 'About Us';
   static const String TITLE_DPSR_CONTACT_US = 'Contact Us';
+  static const String TITLE_DPSR_COLLEGE_NAME = 'COLLEGE NAME';
+  static const String TITLE_DPSR_COLLEGE_ADDRESS = 'COLLEGE ADDRESS';
+  static const String TITLE_DPSR_COLLEGE_SUBJECTS = 'SUBJECTS';
+  static const String TITLE_DPSR_THEORY_OF_AUTOMATA= 'Theory of automata';
+  static const String TITLE_DPSR_COMPUTER_NETWORKS= 'Computer Networks';
+  static const String TITLE_DPSR_ARTIFICIAL_INTELLIGENCE= 'Artificial Intelligence';
+  static const String TITLE_DPSR_MOBILE_COMPUTING= 'Mobile Computing';
+  static const String TITLE_DPSR_INTERNET_OF_THINGS= 'Internet Of Things';
+  static const String TITLE_DPSR_CONTACT_NUMBER = 'CONTACT_NUMBER';
   static const String TITLE_DPSR_OUR_SERVICES = 'Our Services';
   static const String TITLE_DPSR_BE_SPONSER = 'Be a Sponsor';
   static const String TITLE_DPSR_OUR_SPONSERS = 'Our Sponsors';
@@ -113,6 +123,10 @@ class Strings {
   static const String TITLE_MM_TB_SAS = 'Knowledge';
   static const String TITLE_MM_TB_KAI = 'Charity';
   static const String TITLE_MM_TB_DPSR = 'About Us';
+  static const String TITLE_MM_TB_iced = 'iced';
+  static const String TITLE_MM_TB_college = 'college';
+  static const String TITLE_MM_TB_subject = 'subject';
+
   static const String TITLE_MM_TB_ADMOPR = 'Admin Operations';
   static const String TITLE_SAS_40_SAMSKARAM = 'Genres';
   static const String TITLE_VED_SELECT_CITY = 'Please Select the City';
@@ -127,6 +141,10 @@ class Strings {
   static const String TITLE_VAT_PROPERTIES_DETAILS = 'Properties Details';
   static const String TITLE_KAI_KAI_REGISTRATION = 'Service Registration';
   static const String TITLE_SELECT_IMAGE = 'Select Image';
+  static const String TITLE_DPSR_TEMPERATURE = 'Select TEMPERATURE';
+  static const String TITLE_DPSR_ROOMTEMP = 'Select ROOMTEMP';
+  static const String TITLE_DPSR_BE_CUSTOMERS = 'Select CUSTOMERS';
+  static const String TITLE_DPSR_OUR_CONTACTNUMBER = 'Select CONTACTNUMBER';
 
   // Drop Down Text
   static const String DD_HINT_SEL_REASON = 'Please Select your Reason';
